@@ -1,0 +1,51 @@
+-- Bugün 10 günde SQL eğitimine başlıyorum. Sololearn'de tamalayacağım eğitim için 10 günlük hedef koydum. ( MySQL )
+
+Konu 1 
+Veritabanlarına Giriş:
+Veritabanı , erişim kolaylığının yanı sıra verimli yönetim ve güncellemeleri kolaylaştıracak şekilde düzenlenen bir veri topluluğudur.
+Bir veritabanı, ilgili bilgileri depolayan "tablolardan" oluşur. 
+Tablolar ise sütünlardan ve satırlardan oluşur. ( columns - rows ) 
+Veritabanları genellikle her biri belirli bir amaç için tasarlanmış birden çok tablo içerir. 
+
+---Bir tablonun belirli sayıda sütunu vardır ancak herhangi bir sayıda satırı olabilir.---
+
+Kural 1: The primary key's; - Her satır için benzersiz bir değer (unique value) içermelidir / - NULL değerler içeremez.
+
+SQL
+Veritabanının ne olduğunu anladıktan sonra SQL'i anlamak kolaydır. SQL, Yapılandırılmış Sorgu Dili anlamına gelir. ( Structured Query Language. ) 
+SQL, bir veritabanına erişmek ve bunları işlemek için kullanılır.
+SQL şunları yapabilir: 
+- bir veritabanına kayıt ekleme, güncelleme veya silme. 
+- yeni veritabanları, tablolar, saklı prosedürler ve görünümler oluşturun. 
+- bir veritabanından vb. verileri almak
+
+Bazı KOMUTLAR:
+SHOW DATABASES - Veritabanını gösterir.
+SHOW TABLES - MySQL veritabanındaki tüm tabloları görüntülemek için kullanılır.
+SHOW COLUMNS - belirli bir tablodaki sütunlarla ilgili bilgileri görüntüler.
+
+Özellikler
+Field:sütun adı
+Type: sütun veri türü
+Key: indicates whether the column is indexed
+Default: sütuna atanan varsayılan değer
+Extra: belirli bir sütun hakkında mevcut olan herhangi bir ek bilgiyi içerebilir.
+
+
+Örnek 1
+
+'Müşteriler' tablosundaki sütunları görüntülersiniz?
+
+SHOW COLUMNS 
+FROM customers 
+
+SELECT İfadesi:
+SELECT ifadesi, bir veritabanından veri seçmek için kullanılır.
+
+ÖRNEK 2
+
+SELECT column_list
+FROM table_name
+
+- column_list, verilerin alındığı bir veya daha fazla sütun içerir 
+- table_name, bilgilerin alındığı tablonun adıdır.
