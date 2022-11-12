@@ -1,0 +1,61 @@
+İkinci Gün Syntax Rules - Yazım kuralları ile başlıyor. 
+
+SQL, aynı anda birden fazla sorgu veya komut çalıştırmanıza izin verir. 
+Aşağıdaki SQL ifadesi, müşteriler tablosundan isim ve şehir sütunlarını seçer:
+
+SELECT isim FROM müşteri;
+SELECT sehir FROM müşteri;
+
+--Yukarıda müşteri tablo ve isim sütündur.  --
+-- müşteri tablosundan isim Sütununu Seç--
+
+Kural 1 :
+İfadenin tamamlandığını ve yorumlanmaya hazır olduğunu belirtmek için her SQL ifadesini noktalı virgülle bitirmeyi unutmayın. ( Noktalı virgül : semicolon )
+Kural 2 
+SQL büyük/küçük harfe duyarsızdır.
+
+select hayvan from müşteri;
+SELECT hayvan FROM müşteri;
+sElEct hayvan From müşteri;
+
+Yukardaki tüm sorgular aynı sonucu verir. Ancak tüm SQL komutlarını büyük harfle yazmak yaygın bir uygulamadır.
+
+Kural  3 
+Tek bir SQL ifadesi, bir veya daha fazla metin satırına yerleştirilebilir. 
+Ayrıca, birden fazla SQL ifadesi tek bir metin satırında birleştirilebilir.
+
+Örneğin, aşağıdaki sorgu kesinlikle doğrudur.
+
+SELECT        şehir
+
+
+FROM customers;
+
+Kural 4 
+
+Aynı anda birden çok tablo sütunu seçebilirsiniz. 
+Sadece sütun adlarını virgülle ayırarak listeleyin. Adı, Soyadı, Şehri gibi
+
+Örnek: 
+SELECT isim, soyad, şehir 
+FROM müşteri;
+
+
+kURAL 5
+
+* - YILDIZ İŞARETİ HEPSİ ANLAMINA GELİR
+
+Tablonuzda yer alan tüm bilgileri almak için, her sütun adını ayrı ayrı yazmak yerine, SELECT komutunun arkasına bir yıldız (*) işareti koyun.
+SQL'de yıldız işareti hepsi anlamına gelir.
+
+
+İlk Proje
+
+Problem:
+İçecek satın alırken, taze ve son kullanma tarihi geçmemiş olduğundan emin olmak önemlidir. 
+Bir SQL sorgusu ile isteklerimizi sorgulayalım
+
+SELECT ÜürnAdı, ÜretimTarihi, SonTüketimTarihi
+FROM ürünler;
+
+-- Üürnlerin bulunduğu tablodan sorguda istediğimiz sütünlar gelir. 
